@@ -1,2 +1,1 @@
-# mcks_site_wk4
-Responsive design
+final touches to SI339 web design project
