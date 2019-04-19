@@ -1,0 +1,229 @@
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background: url("../images/site_bg4_pink.png");
+	font-family: "Roboto Mono";
+}
+
+nav{
+	display: block;
+	text-align: center;
+	font-size: 140%;
+}
+
+nav li{
+	padding: 10px;
+	background-color: #fff5f5;
+	border-bottom: solid #d60024;
+}
+
+nav a{
+	text-decoration: none;
+	color: #d60024;
+}
+
+h1, h2, h3{
+	text-align: center;
+	padding: 45px 10px 30px;
+}
+
+span{
+	padding: 40px;
+	color: #d60024;
+	background-image: radial-gradient(#ffffff, #ffffff, #fff5f5, transparent);
+}
+
+main{
+	margin-bottom: auto;
+}
+
+main p, ol{
+	padding: 40px;
+	color: #d60024;
+	text-align: center;
+	font-size: 70%;
+	word-wrap: break-word;
+	background-image: radial-gradient(#ffffff, #ffffff, #ffffff, #fff5f5, transparent);
+}
+
+ol{
+	text-align: left;
+}
+
+footer{
+	background-color: #d60024;
+	padding: 1%;
+	font-size: 70%;
+	color: #ffffff;
+	text-align: center;
+}
+
+a.skip-to-main{
+	top: -500px;
+	left:-1000px;
+    position:absolute;
+}
+
+a.skip-to-main:focus{
+	left: 2%;
+    top: 0;
+    margin-top: 50%;
+    padding: 5px;
+    border:4px solid red;
+    color: #ffffff;
+    text-decoration: none;
+    background-color:#000000;
+}
+
+.active{
+	background-color: #d60024;
+	color: #ffffff;
+}
+
+.fp-img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+}
+
+.group-pic, .types{
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gallery, .mckclown{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 5%;
+}
+
+.gallery img{
+	height: 40%;
+	width: 40%;
+	padding: 2px;
+}
+
+.mckclown img{
+	height: 80%;
+	width: 80%;
+	padding: 2px;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+
+@media only screen and (min-width: 768px) {
+	nav{
+		font-size: 100%;
+		margin-top: 30px;
+	}
+
+	nav li{
+		display: inline;
+		border-bottom: none;
+	}
+
+	h1, h2, h3{
+		font-size: 150%;
+		padding: 10%;
+	}
+
+	span{
+		padding: 50px;
+	}
+
+	main{
+		margin: 0 5% auto;
+	}
+
+	main p, ol{
+		font-size: 90%;
+	}
+
+	section{
+		display: flex;
+		align-items: center;
+	}
+
+	a.skip-to-main:focus{
+    	margin-top: 10%;
+	}
+
+	.fp-img{
+		padding: 10%;
+	}
+
+	.types{
+		width: 40%;
+	}
+
+	.group-pic{
+		width: 90%;
+	}
+
+	.gallery img{
+		height:30%;
+		width: 30%;
+		padding: 2px;
+	}
+
+	.mckclown img{
+		height: 49%;
+		width: 49%;
+		padding: 2px;
+	}
+
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width: 1024px) {
+	nav{
+		font-size: 150%;
+	}
+
+	h1, h2, h3{
+		font-size: 100%;
+		padding: 7%;
+	}
+
+	main{
+		margin: 0 5% auto;
+	}
+	main p, ol{
+		font-size: 80%;
+	}
+
+	section{
+		display: flex;
+		align-items: center;
+	}
+
+	a.skip-to-main:focus{
+    	margin-top: 10%;
+	}
+
+	.fp-img{
+		padding: 10%;
+	}
+
+	.types{
+		width: 40%;
+	}
+
+	.mckclown img{
+		height: 49%;
+		width: 49%;
+		padding: 2px;
+	}
+	
+}
